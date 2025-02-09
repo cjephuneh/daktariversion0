@@ -19,7 +19,7 @@ const PatientDetailScreen = () => {
           return;
         }
     
-        const url = `https://telemed-h2h9awcpdqg0hvac.uksouth-01.azurewebsites.net/api/v1.0/appointments/past/${patientId}`;
+        const url = `https://telemed-h2h9awcpdqg0hvac.uksouth-01.azurewebsites.net/api/v1.0/patients/${patientId}`;
         console.log("Fetching from:", url);
     
         const response = await fetch(url, {

@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import tw from "tailwind-react-native-classnames";
 import { Ionicons } from "@expo/vector-icons";
-// import DatePicker from 'react-native-date-picker';
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 const DoctorHomePage = () => {
   const [chats, setChats] = useState([
@@ -103,8 +103,8 @@ const DoctorHomePage = () => {
           </Text>
         </TouchableOpacity>
 
-        {/* Date Picker
-        <DatePicker
+        {/* {/* Date Picker */}
+        <DateTimePicker
           style={tw`mt-4`}
           date={selectedDate}
           mode="date"
@@ -123,7 +123,7 @@ const DoctorHomePage = () => {
             dateText: { color: "white", fontSize: 16 },
           }}
           onDateChange={(date) => setSelectedDate(date)}
-        /> */}
+        />
       </View>
 
       {/* Upcoming Appointments */}
